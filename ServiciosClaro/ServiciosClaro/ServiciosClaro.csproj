@@ -159,6 +159,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CuentasController.cs" />
+    <Compile Include="Controllers\EmpleadosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -167,9 +168,15 @@
     <Compile Include="Migrations\201907300628528_primera.Designer.cs">
       <DependentUpon>201907300628528_primera.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908032340392_EmpleadosyPuestos.cs" />
+    <Compile Include="Migrations\201908032340392_EmpleadosyPuestos.Designer.cs">
+      <DependentUpon>201908032340392_EmpleadosyPuestos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Cuenta.cs" />
+    <Compile Include="Models\Empleado.cs" />
+    <Compile Include="Models\Puesto.cs" />
     <Compile Include="Models\RegistrarCliente.cs" />
     <Compile Include="Models\Rol.cs" />
     <Compile Include="Models\RolCuenta.cs" />
@@ -263,6 +270,11 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Empleados\Create.cshtml" />
+    <Content Include="Views\Empleados\Delete.cshtml" />
+    <Content Include="Views\Empleados\Details.cshtml" />
+    <Content Include="Views\Empleados\Edit.cshtml" />
+    <Content Include="Views\Empleados\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -274,6 +286,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201907300628528_primera.resx">
       <DependentUpon>201907300628528_primera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908032340392_EmpleadosyPuestos.resx">
+      <DependentUpon>201908032340392_EmpleadosyPuestos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

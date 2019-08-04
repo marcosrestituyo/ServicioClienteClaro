@@ -130,3 +130,4 @@ D:\Marcos' Files\ITLA\Periodo 2019-C2\Programacion III\Proyecto Final\ServicioCl
 D:\Marcos' Files\ITLA\Periodo 2019-C2\Programacion III\Proyecto Final\ServicioClienteClaro\ServiciosClaro\ServiciosClaro\bin\es\System.Web.WebPages.resources.dll
 D:\Marcos' Files\ITLA\Periodo 2019-C2\Programacion III\Proyecto Final\ServicioClienteClaro\ServiciosClaro\ServiciosClaro\bin\es\System.Web.WebPages.Deployment.resources.dll
 D:\Marcos' Files\ITLA\Periodo 2019-C2\Programacion III\Proyecto Final\ServicioClienteClaro\ServiciosClaro\ServiciosClaro\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Marcos' Files\ITLA\Periodo 2019-C2\Programacion III\Proyecto Final\ServicioClienteClaro\ServiciosClaro\ServiciosClaro\obj\Debug\ServiciosClaro.Migrations.EmpleadosyPuestos.resources

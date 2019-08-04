@@ -23,6 +23,8 @@ namespace ServiciosClaro.Models
         public System.Data.Entity.DbSet<ServiciosClaro.Models.Cliente> Clientes { get; set; }
         public System.Data.Entity.DbSet<ServiciosClaro.Models.Rol> Roles { get; set; }
         public System.Data.Entity.DbSet<ServiciosClaro.Models.RolCuenta> RolCuentas { get; set; }
+        public System.Data.Entity.DbSet<ServiciosClaro.Models.Empleado> Empleados { get; set; }
+        public System.Data.Entity.DbSet<ServiciosClaro.Models.Puesto> Puestos { get; set; }
 
         public System.Data.Entity.DbSet<ServiciosClaro.Models.RegistrarCliente> RegistrarClientes { get; set; }
     }

@@ -40,19 +40,17 @@ namespace ServiciosClaro.Controllers
                     {
                         case "Admin":
 
-                            //var id = (from e in db.Empleados
-                            //          join u in db.Login on e.IDUsuario equals u.ID
-                            //          where u.Usuario == c.Usuario
-                            //          select e);
+                            var ida = (from a in db.Empleados
+                                       join u in db.Cuentas on a.IdCuenta equals u.Id
+                                       where u.Usuario == c.Usuario
+                                       select a);
 
-                            //foreach (var item in id)
-                            //{
-                            //    Session["ID"] = item.ID;
-                            //}
+                            foreach (var item in ida)
+                            {
+                                Session["ID"] = item.Id;
+                            }
 
-
-
-                            //return RedirectToAction("Index", "Empleados");
+                            return RedirectToAction("Index", "Empleados");
                             break;
 
                         case "Empleado":

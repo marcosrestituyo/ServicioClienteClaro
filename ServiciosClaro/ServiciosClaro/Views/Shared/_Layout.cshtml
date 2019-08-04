@@ -8,17 +8,21 @@
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
 
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand navbar-dark bg-danger">
 
 
         @Html.ActionLink("Servicios Claro", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -37,15 +41,19 @@
 
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <li class="nav-item active"><a>Hola - @User.Identity.Name!</a></li>
+                    <li class="nav-item active"><a class="nav-link">Hola - @User.Identity.Name!</a></li>
 
-                    <li class="nav-item active">@Html.ActionLink("Cerrar Sesiòn", "CerrarSesion", "Cuentas")</li>
+                    <li class="nav-item active">@Html.ActionLink("Cerrar Sesión", "CerrarSesion", "Cuentas", null, new { @Class = "nav-link" })</li>
 
                 }
                 else
                 {
-                    <li class="nav-item active">@Html.ActionLink("Iniciar Sesión", "Login", "Cuentas")</li>
-                    <li class="nav-item active">@Html.ActionLink("Registrarse", "Registrar", "Cuentas")</li>
+                    <li class="nav-item active">
+                        @Html.ActionLink("Iniciar Sesión", "Login", "Cuentas", null, new { @Class = "nav-link" })
+                    </li>
+                    <li class="nav-item active">
+                        @Html.ActionLink("Registrarse", "Registrar", "Cuentas", null, new { @Class = "nav-link" })
+                    </li>
                 }
             </ul>
 
@@ -60,10 +68,10 @@
 
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
+       @* <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+    </footer>*@
     </div>
 
     @Scripts.Render("~/bundles/jquery")

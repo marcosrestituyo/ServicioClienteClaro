@@ -1,0 +1,16 @@
+namespace ServiciosClaro.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class EmpleadosyPuestos : DbMigration
+    {
+        public override void Up()
+        {
+        }
+        
+        public override void Down()
+        {
+        }
+    }
+}
